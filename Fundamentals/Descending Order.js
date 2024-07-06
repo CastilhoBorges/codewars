@@ -8,4 +8,4 @@ function descendingOrder(n) {
   return Number(subs);
 }
 
-console.log(descendingOrder(5874132369));
+console.log(descendingOrder(32587964776441));
