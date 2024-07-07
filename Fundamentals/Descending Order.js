@@ -1,11 +1,5 @@
 function descendingOrder(n) {
-  let xStr = String(n);
-  let subs = xStr.split("").map(Number);
-  subs.sort();
-  subs = subs.reverse();
-  subs = subs.join("");
-
-  return Number(subs);
+  return parseInt(String(n).split("").sort().reverse().join(""));
 }
 
 console.log(descendingOrder(32587964776441));
