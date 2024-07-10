@@ -10,7 +10,7 @@ function between1(a, b) {
 
 function between2(a, b) {
   let arr = [];
-  for (let princip = a; princip <= b; princip++) {
+  for (princip = a; princip <= b; princip++) {
     arr.push(princip);
   }
 
