@@ -1,6 +1,5 @@
 const sum = function (numbers) {
   "use strict";
-
   return numbers.reduce((a, b) => a + b, 0);
 };
 
