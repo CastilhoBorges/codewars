@@ -1,13 +1,14 @@
 function bouncingBall(h, bounce, window) {
-  let seeBall = 0;
-  if (h > 0 && bounce > 0 && bounce < 1 && window < h) {
-    for (let quique = h * bounce; quique >= h; quique *= bounce) {
-      seeBall += 1;
-    }
-    return seeBall.toFixed(10);
-  } else {
-    return -1;
+  if (h <= 0 || bounce >= 1 || bounce <= 0 || window >= h) return -1;
+  let seen = 0;
+
+  while (h > window) {
+    seen += 1;
+    h *= bounce;
+    if (h > window) seen += 1;
   }
+
+  return seen;
 }
 
 console.log(bouncingBall(2, 0.5, 1));
