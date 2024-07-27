@@ -7,6 +7,7 @@ function bouncingBall(h, bounce, window) {
     h *= bounce;
     if (h > window) seen += 1;
   }
+  
 
   return seen;
 }
