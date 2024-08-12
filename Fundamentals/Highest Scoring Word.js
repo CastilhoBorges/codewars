@@ -32,5 +32,5 @@ const high = function (x) {
   for (const word of x) {
     
   }
-  
+
 };
