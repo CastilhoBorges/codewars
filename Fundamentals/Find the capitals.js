@@ -10,3 +10,4 @@ const capitals = function (word) {
 };
 
 console.log(capitals("CodEWaRs"));
+console.log();
