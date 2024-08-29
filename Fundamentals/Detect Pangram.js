@@ -5,3 +5,4 @@ const isPangram = function (s) {
   const setStr = new Set(strInitial.split(""));
   return setStr.size === 26;
 };
+{}
